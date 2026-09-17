@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,7 +9,7 @@
 
     <meta
         name="description"
-        content="Website resmi Departemen HSE PT Unggul Ejawantah Industri."
+        content="Website HSE Department PT Unggul Ejawantah Industri."
     >
 
     <link rel="stylesheet" href="css/home.css">
@@ -17,24 +18,26 @@
 <body>
 
     <!-- =========================
-         NAVBAR
+         HEADER
     ========================== -->
+
     <header class="site-header">
 
-        <nav class="navbar container">
+        <div class="container navbar">
 
             <a href="index.html" class="brand">
 
-                <div class="brand-logo">
-                    HSE
+                <div class="brand-mark">
+                    <span>HSE</span>
                 </div>
 
-                <div class="brand-text">
+                <div class="brand-info">
                     <strong>HSE Department</strong>
                     <span>PT Unggul Ejawantah Industri</span>
                 </div>
 
             </a>
+
 
             <button
                 class="menu-toggle"
@@ -43,71 +46,82 @@
                 aria-label="Buka menu"
                 aria-expanded="false"
             >
-                ☰
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
-            <ul class="nav-menu" id="navMenu">
 
-                <li>
-                    <a href="index.html" class="active">
-                        Home
-                    </a>
-                </li>
+            <nav class="main-nav">
 
-                <li>
-                    <a href="profil.html">
-                        Profil
-                    </a>
-                </li>
+                <ul class="nav-menu" id="navMenu">
 
-                <li>
-                    <a href="dokumentasi.html">
-                        Dokumentasi
-                    </a>
-                </li>
+                    <li>
+                        <a href="index.html" class="active">
+                            Home
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
+                    <li>
+                        <a href="profil.html">
+                            Profil
+                        </a>
+                    </li>
 
-            </ul>
+                    <li>
+                        <a href="dokumentasi.html">
+                            Dokumentasi
+                        </a>
+                    </li>
 
-        </nav>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
 
     </header>
 
 
     <!-- =========================
-         MAIN CONTENT
+         MAIN
     ========================== -->
+
     <main>
 
-        <!-- HERO -->
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section class="hero">
 
-            <div class="container hero-content">
+            <div class="container hero-grid">
 
-                <div class="hero-text">
+                <div class="hero-content">
 
-                    <p class="hero-label">
+                    <div class="eyebrow">
                         HSE DEPARTMENT
-                    </p>
+                    </div>
 
                     <h1>
-                        Keselamatan dan Kesehatan
-                        <span>Untuk Lingkungan Kerja yang Lebih Baik</span>
+                        Membangun
+                        <span>Budaya Kerja Aman</span>
                     </h1>
 
                     <p class="hero-description">
                         Departemen HSE PT Unggul Ejawantah Industri
-                        berkomitmen mendukung terciptanya lingkungan
-                        kerja yang aman, sehat, tertib, dan peduli terhadap
-                        lingkungan.
+                        berkomitmen mendukung penerapan Health, Safety,
+                        dan Environment dalam setiap kegiatan pekerjaan.
                     </p>
 
-                    <div class="hero-buttons">
+                    <div class="hero-actions">
 
                         <a
                             href="profil.html"
@@ -118,9 +132,9 @@
 
                         <a
                             href="dokumentasi.html"
-                            class="button button-secondary"
+                            class="button button-outline"
                         >
-                            Lihat Dokumentasi
+                            Dokumentasi
                         </a>
 
                     </div>
@@ -128,25 +142,55 @@
                 </div>
 
 
-                <div class="hero-panel">
+                <div class="hero-card">
 
-                    <div class="shield-icon">
-                        🛡️
+                    <div class="hero-card-top">
+
+                        <div class="status-dot"></div>
+
+                        <span>
+                            HSE COMMITMENT
+                        </span>
+
                     </div>
 
-                    <p class="panel-label">
-                        OUR COMMITMENT
-                    </p>
+
+                    <div class="hero-card-icon">
+                        <div class="shield">
+                            ✓
+                        </div>
+                    </div>
+
 
                     <h2>
                         Safety First
                     </h2>
 
                     <p>
-                        Keselamatan bukan hanya aturan,
-                        tetapi merupakan bagian dari budaya
-                        kerja yang harus diterapkan bersama.
+                        Keselamatan kerja merupakan bagian dari
+                        budaya yang diterapkan melalui kepedulian,
+                        disiplin, dan tanggung jawab bersama.
                     </p>
+
+
+                    <div class="hero-card-line"></div>
+
+
+                    <div class="hero-card-footer">
+
+                        <span>
+                            HEALTH
+                        </span>
+
+                        <span>
+                            SAFETY
+                        </span>
+
+                        <span>
+                            ENVIRONMENT
+                        </span>
+
+                    </div>
 
                 </div>
 
@@ -155,20 +199,28 @@
         </section>
 
 
-        <!-- ABOUT HSE -->
-        <section class="about section">
+        <!-- =========================
+             INTRO
+        ========================== -->
 
-            <div class="container">
+        <section class="intro section">
 
-                <div class="section-heading">
+            <div class="container intro-grid">
 
-                    <p class="section-label">
+                <div class="section-title">
+
+                    <div class="eyebrow">
                         TENTANG KAMI
-                    </p>
+                    </div>
 
                     <h2>
                         HSE Department
                     </h2>
+
+                </div>
+
+
+                <div class="intro-text">
 
                     <p>
                         Departemen HSE merupakan bagian yang mendukung
@@ -176,64 +228,128 @@
                         dalam kegiatan operasional PT Unggul Ejawantah Industri.
                     </p>
 
+                    <p>
+                        Melalui pengawasan, inspeksi, identifikasi bahaya,
+                        pengendalian risiko, edukasi, dan kegiatan HSE lainnya,
+                        departemen HSE berupaya membangun lingkungan kerja
+                        yang aman, sehat, dan bertanggung jawab terhadap lingkungan.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HSE AREAS
+        ========================== -->
+
+        <section class="hse-areas section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <div class="eyebrow">
+                            HSE FRAMEWORK
+                        </div>
+
+                        <h2>
+                            Health, Safety & Environment
+                        </h2>
+                    </div>
+
+                    <p>
+                        Tiga aspek utama yang menjadi bagian dari
+                        penerapan HSE dalam kegiatan kerja.
+                    </p>
+
                 </div>
 
 
-                <div class="about-grid">
+                <div class="hse-grid">
 
-                    <article class="about-card">
 
-                        <div class="card-number">
+                    <article class="hse-card">
+
+                        <div class="hse-card-number">
                             01
                         </div>
 
-                        <h3>
-                            Health
-                        </h3>
+                        <div class="hse-card-content">
 
-                        <p>
-                            Mendukung penerapan kesehatan kerja dan
-                            meningkatkan kepedulian terhadap kondisi
-                            kesehatan pekerja di lingkungan kerja.
-                        </p>
+                            <h3>
+                                Health
+                            </h3>
+
+                            <p>
+                                Mendukung kesehatan kerja melalui
+                                kepedulian terhadap kondisi pekerja
+                                dan lingkungan kerja.
+                            </p>
+
+                        </div>
+
+                        <div class="hse-card-arrow">
+                            →
+                        </div>
 
                     </article>
 
 
-                    <article class="about-card">
+                    <article class="hse-card">
 
-                        <div class="card-number">
+                        <div class="hse-card-number">
                             02
                         </div>
 
-                        <h3>
-                            Safety
-                        </h3>
+                        <div class="hse-card-content">
 
-                        <p>
-                            Mendorong penerapan keselamatan kerja melalui
-                            identifikasi bahaya, pengendalian risiko,
-                            inspeksi, edukasi, dan pengawasan.
-                        </p>
+                            <h3>
+                                Safety
+                            </h3>
+
+                            <p>
+                                Mengidentifikasi bahaya, mengendalikan
+                                risiko, serta meningkatkan kesadaran
+                                keselamatan dalam pekerjaan.
+                            </p>
+
+                        </div>
+
+                        <div class="hse-card-arrow">
+                            →
+                        </div>
 
                     </article>
 
 
-                    <article class="about-card">
+                    <article class="hse-card">
 
-                        <div class="card-number">
+                        <div class="hse-card-number">
                             03
                         </div>
 
-                        <h3>
-                            Environment
-                        </h3>
+                        <div class="hse-card-content">
 
-                        <p>
-                            Membangun kepedulian terhadap lingkungan
-                            melalui pengelolaan aspek dan dampak lingkungan
-                            dari kegiatan pekerjaan.
-                        </p>
+                            <h3>
+                                Environment
+                            </h3>
+
+                            <p>
+                                Mendorong pengelolaan aspek lingkungan
+                                dan meningkatkan kepedulian terhadap
+                                dampak kegiatan pekerjaan.
+                            </p>
+
+                        </div>
+
+                        <div class="hse-card-arrow">
+                            →
+                        </div>
 
                     </article>
 
@@ -244,25 +360,31 @@
         </section>
 
 
-        <!-- HSE FOCUS -->
+        <!-- =========================
+             HSE FOCUS
+        ========================== -->
+
         <section class="focus section">
 
             <div class="container">
 
                 <div class="section-heading">
 
-                    <p class="section-label">
-                        FOKUS HSE
-                    </p>
+                    <div>
 
-                    <h2>
-                        Membangun Budaya Kerja Aman
-                    </h2>
+                        <div class="eyebrow">
+                            FOKUS KEGIATAN
+                        </div>
+
+                        <h2>
+                            Aktivitas Utama HSE
+                        </h2>
+
+                    </div>
 
                     <p>
-                        Fokus Departemen HSE mencakup berbagai aktivitas
-                        yang mendukung pengendalian risiko dan peningkatan
-                        kinerja HSE.
+                        Kegiatan yang mendukung pengendalian risiko
+                        dan peningkatan kepedulian HSE.
                     </p>
 
                 </div>
@@ -270,62 +392,124 @@
 
                 <div class="focus-grid">
 
+
                     <div class="focus-item">
-                        <span>01</span>
-                        <h3>Identifikasi Bahaya</h3>
-                        <p>
-                            Mengenali potensi bahaya sebelum pekerjaan dilakukan.
-                        </p>
+
+                        <span class="focus-number">
+                            01
+                        </span>
+
+                        <div>
+                            <h3>
+                                Identifikasi Bahaya
+                            </h3>
+
+                            <p>
+                                Mengenali potensi bahaya sebelum
+                                pekerjaan dilaksanakan.
+                            </p>
+                        </div>
+
                     </div>
 
 
                     <div class="focus-item">
-                        <span>02</span>
-                        <h3>Pengendalian Risiko</h3>
-                        <p>
-                            Menerapkan pengendalian sesuai dengan risiko
-                            pekerjaan yang ditemukan.
-                        </p>
+
+                        <span class="focus-number">
+                            02
+                        </span>
+
+                        <div>
+                            <h3>
+                                Pengendalian Risiko
+                            </h3>
+
+                            <p>
+                                Menerapkan pengendalian berdasarkan
+                                risiko pekerjaan.
+                            </p>
+                        </div>
+
                     </div>
 
 
                     <div class="focus-item">
-                        <span>03</span>
-                        <h3>Inspeksi & Monitoring</h3>
-                        <p>
-                            Melakukan pemeriksaan dan pemantauan kondisi
-                            keselamatan di area kerja.
-                        </p>
+
+                        <span class="focus-number">
+                            03
+                        </span>
+
+                        <div>
+                            <h3>
+                                Inspeksi & Monitoring
+                            </h3>
+
+                            <p>
+                                Memantau kondisi keselamatan
+                                dan lingkungan kerja.
+                            </p>
+                        </div>
+
                     </div>
 
 
                     <div class="focus-item">
-                        <span>04</span>
-                        <h3>Training & Awareness</h3>
-                        <p>
-                            Meningkatkan pengetahuan dan kesadaran pekerja
-                            terhadap aspek HSE.
-                        </p>
+
+                        <span class="focus-number">
+                            04
+                        </span>
+
+                        <div>
+                            <h3>
+                                Training & Awareness
+                            </h3>
+
+                            <p>
+                                Meningkatkan pengetahuan dan
+                                kesadaran pekerja terhadap HSE.
+                            </p>
+                        </div>
+
                     </div>
 
 
                     <div class="focus-item">
-                        <span>05</span>
-                        <h3>Pelaporan HSE</h3>
-                        <p>
-                            Mendokumentasikan kegiatan dan informasi HSE
-                            secara terstruktur.
-                        </p>
+
+                        <span class="focus-number">
+                            05
+                        </span>
+
+                        <div>
+                            <h3>
+                                Pelaporan HSE
+                            </h3>
+
+                            <p>
+                                Mendokumentasikan kegiatan HSE
+                                secara terstruktur.
+                            </p>
+                        </div>
+
                     </div>
 
 
                     <div class="focus-item">
-                        <span>06</span>
-                        <h3>Environmental Awareness</h3>
-                        <p>
-                            Mendorong kepedulian terhadap pengelolaan
-                            lingkungan dalam kegiatan kerja.
-                        </p>
+
+                        <span class="focus-number">
+                            06
+                        </span>
+
+                        <div>
+                            <h3>
+                                Environmental Awareness
+                            </h3>
+
+                            <p>
+                                Meningkatkan kepedulian terhadap
+                                pengelolaan lingkungan.
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
@@ -335,67 +519,157 @@
         </section>
 
 
-        <!-- ACTIVITIES -->
+        <!-- =========================
+             ACTIVITIES
+        ========================== -->
+
         <section class="activities section">
 
-            <div class="container">
+            <div class="container activities-layout">
 
-                <div class="activities-content">
 
-                    <div class="activities-text">
+                <div class="activities-intro">
 
-                        <p class="section-label">
-                            KEGIATAN HSE
-                        </p>
+                    <div class="eyebrow">
+                        KEGIATAN HSE
+                    </div>
 
-                        <h2>
-                            Dokumentasi Kegiatan
-                        </h2>
+                    <h2>
+                        Dokumentasi
+                        <span>Kegiatan HSE</span>
+                    </h2>
 
-                        <p>
-                            Website ini menjadi media dokumentasi kegiatan
-                            Departemen HSE PT Unggul Ejawantah Industri
-                            yang dapat dipublikasikan secara internal maupun
-                            eksternal sesuai dengan kebutuhan dan ketentuan
-                            perusahaan.
-                        </p>
+                    <p>
+                        Dokumentasi menjadi bagian penting dalam
+                        mencatat dan menyampaikan aktivitas HSE
+                        yang telah dilaksanakan.
+                    </p>
 
-                        <a
-                            href="dokumentasi.html"
-                            class="button button-primary"
-                        >
-                            Lihat Kegiatan
-                        </a>
+                    <a
+                        href="dokumentasi.html"
+                        class="text-link"
+                    >
+                        Lihat seluruh dokumentasi
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="activity-list">
+
+
+                    <div class="activity-row">
+
+                        <span class="activity-index">
+                            01
+                        </span>
+
+                        <div>
+                            <strong>
+                                Safety Patrol
+                            </strong>
+
+                            <small>
+                                Monitoring kondisi area kerja
+                            </small>
+                        </div>
+
+                        <span class="activity-arrow">
+                            →
+                        </span>
 
                     </div>
 
 
-                    <div class="activity-list">
+                    <div class="activity-row">
 
-                        <div class="activity-row">
-                            <span>01</span>
-                            <strong>Safety Patrol</strong>
+                        <span class="activity-index">
+                            02
+                        </span>
+
+                        <div>
+                            <strong>
+                                Inspeksi K3
+                            </strong>
+
+                            <small>
+                                Pemeriksaan aspek keselamatan
+                            </small>
                         </div>
 
-                        <div class="activity-row">
-                            <span>02</span>
-                            <strong>Inspeksi K3</strong>
+                        <span class="activity-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-row">
+
+                        <span class="activity-index">
+                            03
+                        </span>
+
+                        <div>
+                            <strong>
+                                Training HSE
+                            </strong>
+
+                            <small>
+                                Edukasi dan peningkatan awareness
+                            </small>
                         </div>
 
-                        <div class="activity-row">
-                            <span>03</span>
-                            <strong>Training HSE</strong>
+                        <span class="activity-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-row">
+
+                        <span class="activity-index">
+                            04
+                        </span>
+
+                        <div>
+                            <strong>
+                                Safety Campaign
+                            </strong>
+
+                            <small>
+                                Kampanye dan komunikasi keselamatan
+                            </small>
                         </div>
 
-                        <div class="activity-row">
-                            <span>04</span>
-                            <strong>Safety Campaign</strong>
+                        <span class="activity-arrow">
+                            →
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-row">
+
+                        <span class="activity-index">
+                            05
+                        </span>
+
+                        <div>
+                            <strong>
+                                Toolbox Meeting
+                            </strong>
+
+                            <small>
+                                Komunikasi risiko sebelum pekerjaan
+                            </small>
                         </div>
 
-                        <div class="activity-row">
-                            <span>05</span>
-                            <strong>Toolbox Meeting</strong>
-                        </div>
+                        <span class="activity-arrow">
+                            →
+                        </span>
 
                     </div>
 
@@ -406,19 +680,23 @@
         </section>
 
 
-        <!-- CTA -->
+        <!-- =========================
+             CTA
+        ========================== -->
+
         <section class="cta">
 
-            <div class="container cta-content">
+            <div class="container cta-inner">
 
                 <div>
 
-                    <p class="section-label">
+                    <div class="eyebrow">
                         HSE DEPARTMENT
-                    </p>
+                    </div>
 
                     <h2>
-                        Bersama Membangun Budaya Keselamatan
+                        Bersama Membangun
+                        Budaya Keselamatan
                     </h2>
 
                     <p>
@@ -427,9 +705,10 @@
 
                 </div>
 
+
                 <a
                     href="contact.html"
-                    class="button button-light"
+                    class="button button-white"
                 >
                     Contact HSE
                 </a>
@@ -444,24 +723,31 @@
     <!-- =========================
          FOOTER
     ========================== -->
+
     <footer class="site-footer">
 
-        <div class="container footer-content">
+        <div class="container footer-main">
 
             <div class="footer-brand">
 
-                <strong>
-                    HSE Department
-                </strong>
+                <div class="footer-mark">
+                    HSE
+                </div>
 
-                <p>
-                    PT Unggul Ejawantah Industri
-                </p>
+                <div>
+                    <strong>
+                        HSE Department
+                    </strong>
+
+                    <p>
+                        PT Unggul Ejawantah Industri
+                    </p>
+                </div>
 
             </div>
 
 
-            <div class="footer-navigation">
+            <nav class="footer-nav">
 
                 <a href="index.html">
                     Home
@@ -479,7 +765,7 @@
                     Contact
                 </a>
 
-            </div>
+            </nav>
 
         </div>
 
@@ -488,7 +774,11 @@
 
             <p>
                 © <span id="currentYear"></span>
-                PT Unggul Ejawantah Industri - HSE Department.
+                PT Unggul Ejawantah Industri — HSE Department.
+            </p>
+
+            <p>
+                Health · Safety · Environment
             </p>
 
         </div>
@@ -500,3 +790,4 @@
 
 </body>
 </html>
+```
