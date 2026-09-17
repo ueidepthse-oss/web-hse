@@ -1,7 +1,6 @@
-```javascript
 /* =========================================
    HSE DEPARTMENT UEI
-   HOME PAGE V2 JAVASCRIPT
+   HOME PAGE JAVASCRIPT
 ========================================= */
 
 
@@ -11,6 +10,7 @@
 
 const menuToggle =
     document.getElementById("menuToggle");
+
 
 const navMenu =
     document.getElementById("navMenu");
@@ -25,6 +25,7 @@ if (menuToggle && navMenu) {
             const isOpen =
                 navMenu.classList.toggle("show");
 
+
             menuToggle.setAttribute(
                 "aria-expanded",
                 isOpen.toString()
@@ -38,13 +39,47 @@ if (menuToggle && navMenu) {
         navMenu.querySelectorAll("a");
 
 
-    navLinks.forEach(function (link) {
+    navLinks.forEach(
+        function (link) {
 
-        link.addEventListener(
-            "click",
-            function () {
+            link.addEventListener(
+                "click",
+                function () {
+
+                    navMenu.classList.remove("show");
+
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            const clickedInsideMenu =
+                navMenu.contains(event.target);
+
+
+            const clickedToggle =
+                menuToggle.contains(event.target);
+
+
+            if (
+                !clickedInsideMenu &&
+                !clickedToggle
+            ) {
 
                 navMenu.classList.remove("show");
+
 
                 menuToggle.setAttribute(
                     "aria-expanded",
@@ -52,9 +87,9 @@ if (menuToggle && navMenu) {
                 );
 
             }
-        );
 
-    });
+        }
+    );
 
 }
 
@@ -73,4 +108,49 @@ if (currentYear) {
         new Date().getFullYear();
 
 }
-```
+
+
+/* =========================================
+   ACTIVE NAVIGATION
+========================================= */
+
+const currentPage =
+    window.location.pathname
+        .split("/")
+        .pop();
+
+
+const pageLinks =
+    document.querySelectorAll(".nav-link");
+
+
+pageLinks.forEach(
+    function (link) {
+
+        const linkPage =
+            link.getAttribute("href");
+
+
+        if (
+            linkPage === currentPage ||
+            (
+                currentPage === "" &&
+                linkPage === "index.html"
+            )
+        ) {
+
+            pageLinks.forEach(
+                function (item) {
+
+                    item.classList.remove("active");
+
+                }
+            );
+
+
+            link.classList.add("active");
+
+        }
+
+    }
+);
