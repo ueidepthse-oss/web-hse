@@ -1,95 +1,64 @@
-/* =========================================
-   HSE HOME PAGE JAVASCRIPT
-========================================= */
-
+```javascript
 document.addEventListener("DOMContentLoaded", function () {
-
-    const menuToggle =
-        document.getElementById("menuToggle");
-
-    const navMenu =
-        document.getElementById("navMenu");
-
 
     /* =========================================
        MOBILE MENU
-    ========================================== */
+    ========================================= */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
 
     if (menuToggle && navMenu) {
 
-        menuToggle.addEventListener(
-            "click",
-            function () {
-
-                navMenu.classList.toggle("open");
-
-            }
-        );
+        menuToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("open");
+        });
 
 
-        const navLinks =
-            navMenu.querySelectorAll("a");
-
+        const navLinks = navMenu.querySelectorAll("a");
 
         navLinks.forEach(function (link) {
 
-            link.addEventListener(
-                "click",
-                function () {
-
-                    navMenu.classList.remove("open");
-
-                }
-            );
+            link.addEventListener("click", function () {
+                navMenu.classList.remove("open");
+            });
 
         });
 
 
-        document.addEventListener(
-            "click",
-            function (event) {
+        document.addEventListener("click", function (event) {
 
-                const clickedInsideMenu =
-                    navMenu.contains(event.target);
+            const clickedInsideMenu =
+                navMenu.contains(event.target);
 
-                const clickedToggle =
-                    menuToggle.contains(event.target);
+            const clickedToggle =
+                menuToggle.contains(event.target);
 
-
-                if (
-                    !clickedInsideMenu &&
-                    !clickedToggle
-                ) {
-
-                    navMenu.classList.remove("open");
-
-                }
-
+            if (!clickedInsideMenu && !clickedToggle) {
+                navMenu.classList.remove("open");
             }
-        );
+
+        });
 
     }
 
 
     /* =========================================
        CURRENT YEAR
-    ========================================== */
+    ========================================= */
 
     const currentYear =
         document.getElementById("currentYear");
 
-
     if (currentYear) {
-
         currentYear.textContent =
             new Date().getFullYear();
-
     }
 
 
     /* =========================================
-       CARD SCROLL ANIMATION
-    ========================================== */
+       CARD ANIMATION
+    ========================================= */
 
     const animatedElements =
         document.querySelectorAll(
@@ -103,25 +72,17 @@ document.addEventListener("DOMContentLoaded", function () {
             new IntersectionObserver(
                 function (entries) {
 
-                    entries.forEach(
-                        function (entry) {
+                    entries.forEach(function (entry) {
 
-                            if (
-                                entry.isIntersecting
-                            ) {
+                        if (entry.isIntersecting) {
 
-                                entry.target.classList.add(
-                                    "show"
-                                );
+                            entry.target.classList.add("show");
 
-                                observer.unobserve(
-                                    entry.target
-                                );
-
-                            }
+                            observer.unobserve(entry.target);
 
                         }
-                    );
+
+                    });
 
                 },
                 {
@@ -130,13 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
 
-        animatedElements.forEach(
-            function (element) {
-
-                observer.observe(element);
-
-            }
-        );
+        animatedElements.forEach(function (element) {
+            observer.observe(element);
+        });
 
     }
 
