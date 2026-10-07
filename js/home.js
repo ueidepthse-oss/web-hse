@@ -1,141 +1,73 @@
 ```javascript
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* =========================================
-       MOBILE MENU
-    ========================================== */
+    // =========================
+    // NAVIGATION ACTIVE
+    // =========================
 
-    const menuToggle =
-        document.getElementById("menuToggle");
+    const navLinks = document.querySelectorAll(".nav a");
 
-    const navMenu =
-        document.getElementById("navMenu");
+    navLinks.forEach(function (link) {
 
+        link.addEventListener("click", function () {
 
-    if (menuToggle && navMenu) {
+            navLinks.forEach(function (item) {
+                item.classList.remove("active");
+            });
 
-        menuToggle.addEventListener(
-            "click",
-            function () {
-
-                navMenu.classList.toggle("open");
-
-            }
-        );
-
-
-        const navLinks =
-            navMenu.querySelectorAll("a");
-
-
-        navLinks.forEach(function (link) {
-
-            link.addEventListener(
-                "click",
-                function () {
-
-                    navMenu.classList.remove("open");
-
-                }
-            );
-
+            this.classList.add("active");
         });
 
-
-        document.addEventListener(
-            "click",
-            function (event) {
-
-                const clickedInsideMenu =
-                    navMenu.contains(event.target);
-
-                const clickedToggle =
-                    menuToggle.contains(event.target);
+    });
 
 
-                if (
-                    !clickedInsideMenu &&
-                    !clickedToggle
-                ) {
+    // =========================
+    // SUMMARY NUMBER ANIMATION
+    // =========================
 
-                    navMenu.classList.remove("open");
+    const numbers = document.querySelectorAll(".summary-card strong");
 
-                }
+    numbers.forEach(function (number) {
 
-            }
+        const targetText = number.textContent.trim();
+
+        // Ambil angka saja
+        const target = parseInt(
+            targetText.replace(/,/g, ""),
+            10
         );
 
-    }
+        // Jika bukan angka, abaikan
+        if (isNaN(target)) {
+            return;
+        }
 
+        let current = 0;
 
-    /* =========================================
-       CURRENT YEAR
-    ========================================== */
+        const duration = 1000;
+        const startTime = performance.now();
 
-    const currentYear =
-        document.getElementById("currentYear");
+        function animate(time) {
 
-
-    if (currentYear) {
-
-        currentYear.textContent =
-            new Date().getFullYear();
-
-    }
-
-
-    /* =========================================
-       CARD ANIMATION
-    ========================================== */
-
-    const animatedElements =
-        document.querySelectorAll(
-            ".today-card, .info-card, .hero-card, .emergency-card"
-        );
-
-
-    if ("IntersectionObserver" in window) {
-
-        const observer =
-            new IntersectionObserver(
-                function (entries) {
-
-                    entries.forEach(
-                        function (entry) {
-
-                            if (
-                                entry.isIntersecting
-                            ) {
-
-                                entry.target.classList.add(
-                                    "show"
-                                );
-
-                                observer.unobserve(
-                                    entry.target
-                                );
-
-                            }
-
-                        }
-                    );
-
-                },
-                {
-                    threshold: 0.12
-                }
+            const progress = Math.min(
+                (time - startTime) / duration,
+                1
             );
 
+            current = Math.floor(target * progress);
 
-        animatedElements.forEach(
-            function (element) {
+            number.textContent = current.toLocaleString("en-US");
 
-                observer.observe(element);
-
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                number.textContent = target.toLocaleString("en-US");
             }
-        );
+        }
 
-    }
+        requestAnimationFrame(animate);
+
+    });
 
 });
 ```
