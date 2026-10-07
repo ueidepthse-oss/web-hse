@@ -29,7 +29,8 @@
     --white: #ffffff;
     --border: #dce5e3;
 
-    --container: 1180px;
+    /* HANYA DIUBAH UNTUK MEMBERI SPACE KIRI-KANAN */
+    --container: 1140px;
 }
 
 
@@ -50,6 +51,7 @@ html {
 body {
     font-family: "Inter", "Segoe UI", Arial, sans-serif;
     color: var(--text);
+
     background:
         radial-gradient(
             circle at 10% 10%,
@@ -67,6 +69,7 @@ body {
             #f5f8f7 48%,
             #edf4f3 100%
         );
+
     min-height: 100vh;
 }
 
@@ -81,14 +84,11 @@ button {
 
 
 /* =========================
-   GLOBAL CONTAINER
+   CONTAINER
 ========================= */
 
 .container {
-    width: min(
-        calc(100% - 48px),
-        var(--container)
-    );
+    width: calc(100% - 40px);
 
     max-width: var(--container);
 
@@ -120,14 +120,14 @@ button {
 }
 
 .header-inner {
-    width: min(
-        calc(100% - 48px),
-        var(--container)
-    );
+    width: calc(100% - 40px);
+
+    max-width: var(--container);
 
     min-height: 74px;
 
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     align-items: center;
@@ -159,9 +159,11 @@ button {
     align-items: center;
     justify-content: center;
 
-    background: rgba(255, 255, 255, 0.16);
+    background:
+        rgba(255, 255, 255, 0.16);
 
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border:
+        1px solid rgba(255, 255, 255, 0.25);
 
     border-radius: 12px;
 
@@ -176,12 +178,14 @@ button {
 .brand-text {
     display: flex;
     flex-direction: column;
+
     line-height: 1.05;
 }
 
 .brand-title {
     font-size: 17px;
     font-weight: 800;
+
     letter-spacing: 0.2px;
 }
 
@@ -204,6 +208,7 @@ button {
 .main-nav {
     display: flex;
     align-items: center;
+
     gap: 5px;
 }
 
@@ -212,7 +217,8 @@ button {
 
     padding: 9px 12px;
 
-    color: rgba(255, 255, 255, 0.90);
+    color:
+        rgba(255, 255, 255, 0.90);
 
     font-size: 12px;
     font-weight: 700;
@@ -256,7 +262,7 @@ button {
 
 
 /* =========================
-   HERO SECTION
+   HERO
 ========================= */
 
 .hero-section {
@@ -273,9 +279,6 @@ button {
             rgba(235, 245, 243, 0.92)
         );
 }
-
-
-/* Technical geometry */
 
 .hero-section::before {
     content: "";
@@ -322,7 +325,8 @@ button {
     right: -120px;
     top: -100px;
 
-    border: 1px solid rgba(18, 168, 102, 0.12);
+    border:
+        1px solid rgba(18, 168, 102, 0.12);
 
     transform: rotate(45deg);
 
@@ -393,7 +397,8 @@ button {
     right: -80px;
     top: -80px;
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
 
     transform: rotate(45deg);
 }
@@ -411,7 +416,8 @@ button {
 
     border-radius: 50%;
 
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border:
+        1px solid rgba(255, 255, 255, 0.10);
 }
 
 .hse-badge {
@@ -446,11 +452,8 @@ button {
 
     max-width: 550px;
 
-    font-size: clamp(
-        35px,
-        4vw,
-        53px
-    );
+    font-size:
+        clamp(35px, 4vw, 53px);
 
     line-height: 0.98;
 
@@ -467,9 +470,11 @@ button {
 
     margin-top: 16px;
 
-    color: rgba(255, 255, 255, 0.74);
+    color:
+        rgba(255, 255, 255, 0.74);
 
     font-size: 13px;
+
     line-height: 1.7;
 }
 
@@ -478,6 +483,7 @@ button {
     z-index: 2;
 
     display: flex;
+
     gap: 9px;
 
     margin-top: 22px;
@@ -486,7 +492,8 @@ button {
 .btn {
     min-height: 39px;
 
-    padding: 0 15px;
+    padding:
+        0 15px;
 
     display: inline-flex;
     align-items: center;
@@ -515,7 +522,8 @@ button {
         var(--green);
 
     box-shadow:
-        0 7px 16px rgba(18, 168, 102, 0.25);
+        0 7px 16px
+        rgba(18, 168, 102, 0.25);
 }
 
 .btn-secondary {
@@ -525,7 +533,8 @@ button {
         rgba(255, 255, 255, 0.10);
 
     border:
-        1px solid rgba(255, 255, 255, 0.17);
+        1px solid
+        rgba(255, 255, 255, 0.17);
 }
 
 
@@ -544,10 +553,12 @@ button {
         rgba(255, 255, 255, 0.93);
 
     border:
-        1px solid rgba(220, 229, 227, 0.95);
+        1px solid
+        rgba(220, 229, 227, 0.95);
 
     box-shadow:
-        0 9px 25px rgba(16, 37, 63, 0.08);
+        0 9px 25px
+        rgba(16, 37, 63, 0.08);
 
     backdrop-filter: blur(7px);
 }
@@ -555,6 +566,7 @@ button {
 .card-heading {
     display: flex;
     align-items: center;
+
     gap: 10px;
 
     margin-bottom: 13px;
@@ -590,7 +602,8 @@ button {
 }
 
 .card-heading-label {
-    color: var(--green-dark);
+    color:
+        var(--green-dark);
 
     font-size: 9px;
     font-weight: 800;
@@ -601,16 +614,19 @@ button {
 .card-heading-title {
     margin-top: 2px;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 15px;
     font-weight: 800;
 }
 
 .about-text {
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 12px;
+
     line-height: 1.7;
 }
 
@@ -619,9 +635,11 @@ button {
 
     margin-bottom: 8px;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 16px;
+
     line-height: 1.25;
 }
 
@@ -655,7 +673,8 @@ button {
 }
 
 .target-title {
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 15px;
     font-weight: 800;
@@ -665,7 +684,8 @@ button {
     margin-top: 3px;
     margin-bottom: 9px;
 
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 10px;
 }
@@ -718,28 +738,33 @@ button {
 
 .target-item:nth-child(1) .target-icon {
     color: var(--green);
-    background: var(--green-light);
+    background:
+        var(--green-light);
 }
 
 .target-item:nth-child(2) .target-icon {
     color: var(--blue);
-    background: var(--blue-light);
+    background:
+        var(--blue-light);
 }
 
 .target-item:nth-child(3) .target-icon {
     color: var(--purple);
-    background: var(--purple-light);
+    background:
+        var(--purple-light);
 }
 
 .target-item:nth-child(4) .target-icon {
     color: var(--orange);
-    background: var(--orange-light);
+    background:
+        var(--orange-light);
 }
 
 .target-item strong {
     display: block;
 
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 10px;
     font-weight: 800;
@@ -750,7 +775,8 @@ button {
 
     margin-top: 2px;
 
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 9px;
 }
@@ -807,6 +833,7 @@ button {
 .section-heading-left {
     display: flex;
     align-items: center;
+
     gap: 9px;
 }
 
@@ -820,7 +847,8 @@ button {
 
     border-radius: 8px;
 
-    color: var(--green);
+    color:
+        var(--green);
 
     background:
         var(--green-light);
@@ -832,14 +860,16 @@ button {
 }
 
 .section-heading h2 {
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 16px;
     font-weight: 850;
 }
 
 .section-heading p {
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 10px;
 }
@@ -862,7 +892,7 @@ button {
 }
 
 .today-card {
-    height: 124px;
+    height: 132px;
 
     padding: 12px;
 
@@ -879,7 +909,8 @@ button {
         1px solid var(--border);
 
     box-shadow:
-        0 7px 18px rgba(16, 37, 63, 0.06);
+        0 7px 18px
+        rgba(16, 37, 63, 0.06);
 
     transition:
         transform 0.2s ease,
@@ -890,7 +921,8 @@ button {
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 24px rgba(16, 37, 63, 0.10);
+        0 12px 24px
+        rgba(16, 37, 63, 0.10);
 }
 
 .today-top {
@@ -900,8 +932,8 @@ button {
 }
 
 .today-icon {
-    width: 57px;
-    height: 57px;
+    width: 62px;
+    height: 62px;
 
     display: flex;
     align-items: center;
@@ -911,44 +943,63 @@ button {
 }
 
 .today-icon svg {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
 }
 
 .today-card:nth-child(1) .today-icon {
-    color: var(--green);
-    background: var(--green-light);
+    color:
+        var(--green);
+
+    background:
+        var(--green-light);
 }
 
 .today-card:nth-child(2) .today-icon {
-    color: var(--blue);
-    background: var(--blue-light);
+    color:
+        var(--blue);
+
+    background:
+        var(--blue-light);
 }
 
 .today-card:nth-child(3) .today-icon {
-    color: var(--purple);
-    background: var(--purple-light);
+    color:
+        var(--purple);
+
+    background:
+        var(--purple-light);
 }
 
 .today-card:nth-child(4) .today-icon {
-    color: var(--orange);
-    background: var(--orange-light);
+    color:
+        var(--orange);
+
+    background:
+        var(--orange-light);
 }
 
 .today-card:nth-child(5) .today-icon {
-    color: var(--red);
-    background: var(--red-light);
+    color:
+        var(--red);
+
+    background:
+        var(--red-light);
 }
 
 .today-card:nth-child(6) .today-icon {
-    color: var(--cyan);
-    background: var(--cyan-light);
+    color:
+        var(--cyan);
+
+    background:
+        var(--cyan-light);
 }
 
 .today-label {
     margin-top: 4px;
 
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 9px;
     font-weight: 800;
@@ -957,7 +1008,8 @@ button {
 }
 
 .today-value {
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 19px;
     font-weight: 850;
@@ -968,7 +1020,8 @@ button {
 .today-unit {
     margin-left: 2px;
 
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 9px;
     font-weight: 600;
@@ -1012,7 +1065,8 @@ button {
         1px solid var(--border);
 
     box-shadow:
-        0 7px 18px rgba(16, 37, 63, 0.05);
+        0 7px 18px
+        rgba(16, 37, 63, 0.05);
 }
 
 .info-icon {
@@ -1034,22 +1088,32 @@ button {
 }
 
 .info-card:nth-child(1) .info-icon {
-    color: var(--green);
-    background: var(--green-light);
+    color:
+        var(--green);
+
+    background:
+        var(--green-light);
 }
 
 .info-card:nth-child(2) .info-icon {
-    color: var(--blue);
-    background: var(--blue-light);
+    color:
+        var(--blue);
+
+    background:
+        var(--blue-light);
 }
 
 .info-card:nth-child(3) .info-icon {
-    color: var(--orange);
-    background: var(--orange-light);
+    color:
+        var(--orange);
+
+    background:
+        var(--orange-light);
 }
 
 .info-card h3 {
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 12px;
     font-weight: 800;
@@ -1058,9 +1122,11 @@ button {
 .info-card p {
     margin-top: 3px;
 
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 10px;
+
     line-height: 1.5;
 }
 
@@ -1100,6 +1166,7 @@ button {
 .emergency-left {
     display: flex;
     align-items: center;
+
     gap: 10px;
 }
 
@@ -1113,7 +1180,8 @@ button {
 
     border-radius: 9px;
 
-    color: var(--red);
+    color:
+        var(--red);
 
     background:
         var(--red-light);
@@ -1125,7 +1193,8 @@ button {
 }
 
 .emergency-title {
-    color: var(--navy);
+    color:
+        var(--navy);
 
     font-size: 11px;
     font-weight: 850;
@@ -1134,7 +1203,8 @@ button {
 .emergency-subtitle {
     margin-top: 2px;
 
-    color: var(--text-light);
+    color:
+        var(--text-light);
 
     font-size: 9px;
 }
@@ -1145,7 +1215,8 @@ button {
 
     border-radius: 8px;
 
-    color: var(--red);
+    color:
+        var(--red);
 
     background:
         var(--red-light);
@@ -1162,21 +1233,22 @@ button {
 .site-footer {
     margin-top: 2px;
 
-    color: rgba(255, 255, 255, 0.72);
+    color:
+        rgba(255, 255, 255, 0.72);
 
     background:
         var(--navy-dark);
 }
 
 .footer-inner {
-    width: min(
-        calc(100% - 48px),
-        var(--container)
-    );
+    width: calc(100% - 40px);
+
+    max-width: var(--container);
 
     min-height: 76px;
 
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     align-items: center;
@@ -1188,11 +1260,13 @@ button {
 .footer-brand {
     display: flex;
     flex-direction: column;
+
     gap: 3px;
 }
 
 .footer-brand strong {
-    color: var(--white);
+    color:
+        var(--white);
 
     font-size: 11px;
     font-weight: 800;
@@ -1205,6 +1279,7 @@ button {
 .footer-links {
     display: flex;
     align-items: center;
+
     gap: 14px;
 }
 
@@ -1219,7 +1294,8 @@ button {
 }
 
 .footer-links a:hover {
-    color: var(--white);
+    color:
+        var(--white);
 }
 
 .footer-copy {
@@ -1229,7 +1305,8 @@ button {
 }
 
 .footer-copy strong {
-    color: var(--green);
+    color:
+        var(--green);
 }
 
 
@@ -1259,10 +1336,6 @@ button {
         grid-template-columns:
             repeat(3, minmax(0, 1fr));
     }
-
-    .today-card {
-        height: 120px;
-    }
 }
 
 
@@ -1278,22 +1351,6 @@ button {
 
         font-size: 10px;
     }
-
-    .header-inner {
-        width:
-            min(
-                calc(100% - 36px),
-                var(--container)
-            );
-    }
-
-    .footer-inner {
-        width:
-            min(
-                calc(100% - 36px),
-                var(--container)
-            );
-    }
 }
 
 
@@ -1301,10 +1358,12 @@ button {
 
     .container {
         width:
-            min(
-                calc(100% - 32px),
-                var(--container)
-            );
+            calc(100% - 32px);
+    }
+
+    .header-inner {
+        width:
+            calc(100% - 32px);
     }
 
     .main-nav {
@@ -1325,7 +1384,8 @@ button {
             #08794b;
 
         box-shadow:
-            0 12px 25px rgba(0, 0, 0, 0.15);
+            0 12px 25px
+            rgba(0, 0, 0, 0.15);
     }
 
     .main-nav.open {
@@ -1437,20 +1497,6 @@ button {
         gap: 8px;
     }
 
-    .today-card {
-        height: 118px;
-    }
-
-    .today-icon {
-        width: 52px;
-        height: 52px;
-    }
-
-    .today-icon svg {
-        width: 32px;
-        height: 32px;
-    }
-
     .target-list {
         grid-template-columns:
             1fr;
@@ -1481,10 +1527,6 @@ button {
     .today-grid {
         grid-template-columns:
             1fr;
-    }
-
-    .today-card {
-        height: 108px;
     }
 }
 ```
