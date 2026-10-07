@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,38 +7,40 @@
 
     <title>HSE Department | PT Unggul Ejawantah Industri</title>
 
-    <meta
-        name="description"
-        content="Website resmi Department HSE PT Unggul Ejawantah Industri"
-    >
-
     <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
 
-    <!-- =========================================
-         NAVBAR
-    ========================================== -->
-    <header class="navbar">
-        <div class="container nav-container">
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="main-header">
+
+        <div class="nav-container">
 
             <a href="index.html" class="brand">
-                <div class="brand-logo">
-                    HSE
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3L20 6V11C20 16.2 16.7 20 12 21C7.3 20 4 16.2 4 11V6L12 3Z"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linejoin="round"/>
+                        <path d="M9 12L11 14L15 10"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
                 </div>
 
                 <div class="brand-text">
-                    <strong>HSE DEPARTMENT</strong>
-                    <span>PT Unggul Ejawantah Industri</span>
+                    <strong>HSE</strong>
+                    <span>Department</span>
                 </div>
             </a>
 
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Buka menu"
-            >
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -45,9 +48,7 @@
 
             <nav class="nav-menu" id="navMenu">
 
-                <a href="index.html" class="active">
-                    HOME
-                </a>
+                <a href="index.html" class="active">HOME</a>
 
                 <a href="tentang-hse/index.html">
                     TENTANG HSE
@@ -76,353 +77,160 @@
             </nav>
 
         </div>
+
     </header>
 
 
     <main>
 
-        <!-- =========================================
-             HERO AREA
-        ========================================== -->
+        <!-- =========================
+             HERO
+        ========================== -->
         <section class="hero-section">
 
-            <div class="hero-decoration hero-decoration-one"></div>
-            <div class="hero-decoration hero-decoration-two"></div>
+            <div class="container">
 
-            <div class="container hero-grid">
+                <div class="hero-grid">
 
-                <!-- HERO -->
-                <div class="hero-main">
+                    <!-- HERO -->
+                    <div class="hero-main">
 
-                    <div class="hero-pattern"></div>
+                        <div class="hero-decoration hero-decoration-one"></div>
+                        <div class="hero-decoration hero-decoration-two"></div>
 
-                    <div class="hero-content">
+                        <div class="hero-content">
 
-                        <div class="hero-badge">
-                            <span class="badge-dot"></span>
-                            HEALTH • SAFETY • ENVIRONMENT
-                        </div>
+                            <div class="hero-badge">
+                                <span class="badge-dot"></span>
+                                HEALTH • SAFETY • ENVIRONMENT
+                            </div>
 
-                        <h1>
-                            Safety Starts
-                            <span>With Us.</span>
-                        </h1>
+                            <h1>
+                                Safety Starts
+                                <span>With Us.</span>
+                            </h1>
 
-                        <p class="hero-description">
-                            Membangun budaya kerja yang aman, sehat,
-                            dan bertanggung jawab terhadap lingkungan
-                            melalui komitmen HSE yang berkelanjutan.
-                        </p>
+                            <p>
+                                Bersama membangun budaya kerja yang aman,
+                                sehat, dan peduli terhadap lingkungan.
+                            </p>
 
-                        <div class="hero-buttons">
+                            <div class="hero-buttons">
 
-                            <a
-                                href="laporan/index.html"
-                                class="btn btn-primary"
-                            >
-                                LAPORKAN INSIDEN
-                                <span>→</span>
-                            </a>
+                                <a href="laporan/index.html" class="btn btn-primary">
+                                    LAPORKAN INSIDEN
+                                    <span>→</span>
+                                </a>
 
-                            <a
-                                href="tentang-hse/index.html"
-                                class="btn btn-outline"
-                            >
-                                TENTANG HSE
-                            </a>
+                                <a href="tentang-hse/index.html" class="btn btn-outline">
+                                    TENTANG HSE
+                                </a>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
 
+                    <!-- TENTANG HSE -->
+                    <div class="hero-card about-card">
 
-                <!-- TENTANG HSE -->
-                <div class="hero-card about-card">
+                        <div class="card-icon green-icon">
 
-                    <div class="card-top-line"></div>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L20 6V11C20 16.2 16.7 20 12 21C7.3 20 4 16.2 4 11V6L12 3Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linejoin="round"/>
 
-                    <div class="large-card-icon green-card-icon">
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M12 3L19 6V11C19 15.5 16.2 19.3 12 21C7.8 19.3 5 15.5 5 11V6L12 3Z"
-                                stroke="currentColor"
-                                stroke-width="1.8"
-                                stroke-linejoin="round"
-                            />
-
-                            <path
-                                d="M9 12L11 14L15 10"
-                                stroke="currentColor"
-                                stroke-width="1.8"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-
-                    </div>
-
-                    <div class="card-label">
-                        TENTANG HSE
-                    </div>
-
-                    <h2>
-                        Keselamatan adalah
-                        <span>tanggung jawab bersama.</span>
-                    </h2>
-
-                    <p>
-                        Department HSE berkomitmen menciptakan
-                        tempat kerja yang aman, sehat, dan ramah
-                        lingkungan bagi seluruh karyawan serta
-                        pihak terkait.
-                    </p>
-
-                    <a
-                        href="tentang-hse/index.html"
-                        class="text-link"
-                    >
-                        Selengkapnya
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-
-                <!-- TARGET HSE -->
-                <div class="hero-card target-card">
-
-                    <div class="card-top-line blue-line"></div>
-
-                    <div class="target-heading">
-
-                        <div class="large-card-icon blue-card-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="8"
-                                    stroke="currentColor"
-                                    stroke-width="1.8"
-                                />
-
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="4"
-                                    stroke="currentColor"
-                                    stroke-width="1.8"
-                                />
-
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="1.4"
-                                    fill="currentColor"
-                                />
-
-                                <path
-                                    d="M16.5 7.5L20 4"
-                                    stroke="currentColor"
-                                    stroke-width="1.8"
-                                    stroke-linecap="round"
-                                />
-
-                                <path
-                                    d="M18 4H20V6"
-                                    stroke="currentColor"
-                                    stroke-width="1.8"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
+                                <path d="M9 12L11 14L15 10"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
                             </svg>
 
                         </div>
 
-                        <div>
-                            <div class="card-label">
-                                TARGET HSE
-                            </div>
+                        <span class="small-label">
+                            TENTANG HSE
+                        </span>
 
-                            <h2>
-                                Our HSE Goals
-                            </h2>
-                        </div>
+                        <h2>
+                            Keselamatan adalah
+                            <span>tanggung jawab bersama.</span>
+                        </h2>
+
+                        <p>
+                            HSE berkomitmen menciptakan lingkungan kerja
+                            yang aman, sehat, dan berkelanjutan.
+                        </p>
+
+                        <a href="tentang-hse/index.html" class="text-link">
+                            Selengkapnya →
+                        </a>
 
                     </div>
 
 
-                    <div class="target-list">
+                    <!-- TARGET HSE -->
+                    <div class="hero-card target-card">
 
-                        <div class="target-item">
+                        <div class="card-heading">
 
-                            <div class="target-icon trophy-icon">
+                            <div class="card-icon blue-icon">
 
                                 <svg viewBox="0 0 24 24" fill="none">
-                                    <path
-                                        d="M8 4H16V9C16 11.8 14.2 14 12 14C9.8 14 8 11.8 8 9V4Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                    />
+                                    <circle cx="12" cy="12" r="8"
+                                            stroke="currentColor"
+                                            stroke-width="2"/>
 
-                                    <path
-                                        d="M8 6H5V8C5 10.2 6.5 12 8.5 12"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
+                                    <circle cx="12" cy="12" r="4"
+                                            stroke="currentColor"
+                                            stroke-width="2"/>
 
-                                    <path
-                                        d="M16 6H19V8C19 10.2 17.5 12 15.5 12"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
-
-                                    <path
-                                        d="M12 14V18"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
-
-                                    <path
-                                        d="M9 20H15"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
+                                    <circle cx="12" cy="12" r="1.5"
+                                            fill="currentColor"/>
                                 </svg>
 
                             </div>
 
-                            <div class="target-text">
-                                <strong>ZERO</strong>
-                                <span>Fatality</span>
+                            <div>
+                                <span class="small-label">TARGET</span>
+                                <h2>HSE TARGET</h2>
                             </div>
 
                         </div>
 
+                        <div class="target-list">
 
-                        <div class="target-item">
-
-                            <div class="target-icon shield-icon">
-
-                                <svg viewBox="0 0 24 24" fill="none">
-
-                                    <path
-                                        d="M12 3L19 6V11C19 15.5 16.2 19.3 12 21C7.8 19.3 5 15.5 5 11V6L12 3Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linejoin="round"
-                                    />
-
-                                    <path
-                                        d="M9 12L11 14L15 10"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-
-                                </svg>
-
+                            <div class="target-item">
+                                <div class="target-icon">
+                                    ✓
+                                </div>
+                                <span>ZERO Fatality</span>
                             </div>
 
-                            <div class="target-text">
-                                <strong>ZERO</strong>
-                                <span>LTI</span>
+                            <div class="target-item">
+                                <div class="target-icon">
+                                    ✓
+                                </div>
+                                <span>ZERO LTI</span>
                             </div>
 
-                        </div>
-
-
-                        <div class="target-item">
-
-                            <div class="target-icon check-icon">
-
-                                <svg viewBox="0 0 24 24" fill="none">
-
-                                    <circle
-                                        cx="12"
-                                        cy="12"
-                                        r="8.5"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                    />
-
-                                    <path
-                                        d="M8 12L10.7 14.7L16 9.5"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-
-                                </svg>
-
+                            <div class="target-item">
+                                <div class="target-icon">
+                                    ✓
+                                </div>
+                                <span>100% Compliance</span>
                             </div>
 
-                            <div class="target-text">
-                                <strong>100%</strong>
-                                <span>Compliance</span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="target-item">
-
-                            <div class="target-icon report-icon">
-
-                                <svg viewBox="0 0 24 24" fill="none">
-
-                                    <path
-                                        d="M6 4H18V20H6V4Z"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linejoin="round"
-                                    />
-
-                                    <path
-                                        d="M9 8H15"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
-
-                                    <path
-                                        d="M9 12H15"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
-
-                                    <path
-                                        d="M9 16H13"
-                                        stroke="currentColor"
-                                        stroke-width="1.7"
-                                        stroke-linecap="round"
-                                    />
-
-                                </svg>
-
-                            </div>
-
-                            <div class="target-text">
-                                <strong>100%</strong>
-                                <span>Reporting</span>
+                            <div class="target-item">
+                                <div class="target-icon">
+                                    ✓
+                                </div>
+                                <span>100% Reporting</span>
                             </div>
 
                         </div>
@@ -436,12 +244,10 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =========================
              HSE TODAY
-        ========================================== -->
+        ========================== -->
         <section class="today-section">
-
-            <div class="section-background-pattern"></div>
 
             <div class="container">
 
@@ -449,17 +255,18 @@
 
                     <div>
                         <span class="section-label">
-                            HSE TODAY
+                            HSE PERFORMANCE
                         </span>
 
                         <h2>
-                            HSE Performance
+                            HSE Today
                         </h2>
                     </div>
 
-                    <p>
-                        Ringkasan data HSE terkini.
-                    </p>
+                    <span class="live-status">
+                        <span></span>
+                        LIVE DATA
+                    </span>
 
                 </div>
 
@@ -469,48 +276,32 @@
                     <!-- MANPOWER -->
                     <div class="today-card">
 
-                        <div class="today-icon green-today-icon">
+                        <div class="today-icon green-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="9" cy="8" r="3"
+                                        stroke="currentColor"
+                                        stroke-width="2"/>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <circle
-                                    cx="9"
-                                    cy="8"
-                                    r="3"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                                <path d="M3.5 19C3.5 15.7 5.7 14 9 14C12.3 14 14.5 15.7 14.5 19"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
 
-                                <path
-                                    d="M3.5 19C3.8 15.5 5.8 13.5 9 13.5C12.2 13.5 14.2 15.5 14.5 19"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
+                                <circle cx="17" cy="9" r="2"
+                                        stroke="currentColor"
+                                        stroke-width="2"/>
 
-                                <circle
-                                    cx="17"
-                                    cy="9"
-                                    r="2.3"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
-
-                                <path
-                                    d="M16 13.5C18.8 13.5 20.2 15.2 20.5 18"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
+                                <path d="M16 14.5C18.8 14.7 20.5 16.2 20.5 19"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
                             </svg>
-
                         </div>
 
-                        <div class="today-content">
+                        <div class="today-info">
+                            <span>MANPOWER</span>
                             <strong>34</strong>
-                            <span>MANPOWER • ORANG</span>
+                            <small>ORANG</small>
                         </div>
 
                     </div>
@@ -519,34 +310,24 @@
                     <!-- MAN HOURS -->
                     <div class="today-card">
 
-                        <div class="today-icon blue-today-icon">
+                        <div class="today-icon blue-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="8"
+                                        stroke="currentColor"
+                                        stroke-width="2"/>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="8"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
-
-                                <path
-                                    d="M12 7V12L15.5 14"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
+                                <path d="M12 7V12L15 14"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
                             </svg>
-
                         </div>
 
-                        <div class="today-content">
+                        <div class="today-info">
+                            <span>MAN HOURS</span>
                             <strong>78,540</strong>
-                            <span>MAN HOURS • JAM</span>
+                            <small>JAM</small>
                         </div>
 
                     </div>
@@ -555,46 +336,28 @@
                     <!-- HAZARD REPORT -->
                     <div class="today-card">
 
-                        <div class="today-icon orange-today-icon">
+                        <div class="today-icon purple-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M6 3H15L19 7V21H6V3Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linejoin="round"/>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M5 4H19V20H5V4Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linejoin="round"
-                                />
+                                <path d="M14 3V8H19"
+                                      stroke="currentColor"
+                                      stroke-width="2"/>
 
-                                <path
-                                    d="M8 8H16"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
-
-                                <path
-                                    d="M8 12H16"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
-
-                                <path
-                                    d="M8 16H13"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
+                                <path d="M9 12H16M9 16H14"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
                             </svg>
-
                         </div>
 
-                        <div class="today-content">
+                        <div class="today-info">
+                            <span>HAZARD REPORT</span>
                             <strong>92</strong>
-                            <span>HAZARD REPORT • REPORT</span>
+                            <small>REPORT</small>
                         </div>
 
                     </div>
@@ -603,32 +366,22 @@
                     <!-- NEAR MISS -->
                     <div class="today-card">
 
-                        <div class="today-icon purple-today-icon">
+                        <div class="today-icon orange-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M2.5 12C5.3 7.5 8.5 5.5 12 5.5C15.5 5.5 18.7 7.5 21.5 12C18.7 16.5 15.5 18.5 12 18.5C8.5 18.5 5.3 16.5 2.5 12Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"/>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M2.5 12C5.5 7 8.7 5 12 5C15.3 5 18.5 7 21.5 12C18.5 17 15.3 19 12 19C8.7 19 5.5 17 2.5 12Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
-
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="3"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                                <circle cx="12" cy="12" r="3"
+                                        stroke="currentColor"
+                                        stroke-width="2"/>
                             </svg>
-
                         </div>
 
-                        <div class="today-content">
+                        <div class="today-info">
+                            <span>NEAR MISS</span>
                             <strong>7</strong>
-                            <span>NEAR MISS • KASUS</span>
+                            <small>KASUS</small>
                         </div>
 
                     </div>
@@ -637,98 +390,63 @@
                     <!-- INSIDEN -->
                     <div class="today-card">
 
-                        <div class="today-icon red-today-icon">
+                        <div class="today-icon red-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L21 20H3L12 3Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linejoin="round"/>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M12 4L20 19H4L12 4Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linejoin="round"
-                                />
+                                <path d="M12 9V14"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
 
-                                <path
-                                    d="M12 9V13"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
-
-                                <circle
-                                    cx="12"
-                                    cy="16"
-                                    r="1"
-                                    fill="currentColor"
-                                />
+                                <circle cx="12" cy="17" r="1"
+                                        fill="currentColor"/>
                             </svg>
-
                         </div>
 
-                        <div class="today-content">
+                        <div class="today-info">
+                            <span>INSIDEN</span>
                             <strong>1</strong>
-                            <span>INSIDEN • KASUS</span>
+                            <small>KASUS</small>
                         </div>
 
                     </div>
 
 
                     <!-- HARI KERJA AMAN -->
-                    <div class="today-card highlight-card">
+                    <div class="today-card">
 
-                        <div class="today-icon green-today-icon">
+                        <div class="today-icon green-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="4" y="5" width="16" height="15"
+                                      rx="2"
+                                      stroke="currentColor"
+                                      stroke-width="2"/>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <rect
-                                    x="4"
-                                    y="5"
-                                    width="16"
-                                    height="15"
-                                    rx="2"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                                <path d="M8 3V7M16 3V7"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
 
-                                <path
-                                    d="M8 3V7"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
+                                <path d="M7 11H17"
+                                      stroke="currentColor"
+                                      stroke-width="2"/>
 
-                                <path
-                                    d="M16 3V7"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
-
-                                <path
-                                    d="M7 11H17"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                />
-
-                                <path
-                                    d="M8.5 15L10.5 17L15.5 12"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
+                                <path d="M9 15L11 17L15 13"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
                             </svg>
-
                         </div>
 
-                        <div class="today-content">
+                        <div class="today-info">
+                            <span>HARI KERJA AMAN</span>
                             <strong>280</strong>
-                            <span>HARI KERJA AMAN • HARI</span>
+                            <small>HARI</small>
                         </div>
 
                     </div>
@@ -740,204 +458,121 @@
         </section>
 
 
-        <!-- =========================================
-             INFORMATION
-        ========================================== -->
+        <!-- =========================
+             INFORMASI HSE
+        ========================== -->
         <section class="information-section">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading compact-heading">
 
                     <div>
-
                         <span class="section-label">
-                            INFORMASI HSE
+                            INFORMASI
                         </span>
 
                         <h2>
-                            Informasi terbaru
+                            Informasi HSE
                         </h2>
-
                     </div>
-
-                    <a
-                        href="dokumen/index.html"
-                        class="view-all"
-                    >
-                        Lihat semua →
-                    </a>
 
                 </div>
 
 
                 <div class="information-grid">
 
-                    <article class="info-card">
+                    <div class="info-card">
 
-                        <div class="info-top">
+                        <div class="info-icon green-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 3L20 6V11C20 16.2 16.7 20 12 21C7.3 20 4 16.2 4 11V6L12 3Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linejoin="round"/>
 
-                            <span class="info-category safety">
-                                SAFETY
-                            </span>
-
-                            <span class="info-date">
-                                2026
-                            </span>
-
-                        </div>
-
-                        <div class="info-icon safety-info-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M12 3L19 6V11C19 15.5 16.2 19.3 12 21C7.8 19.3 5 15.5 5 11V6L12 3Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
-
-                                <path
-                                    d="M9 12L11 14L15 10"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                                <path d="M9 12L11 14L15 10"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
                             </svg>
-
                         </div>
 
-                        <h3>
-                            Pentingnya penggunaan APD
-                            di area kerja
-                        </h3>
-
-                        <p>
-                            Pastikan penggunaan alat pelindung diri
-                            sesuai dengan risiko pekerjaan.
-                        </p>
-
-                        <a href="dokumen/index.html">
-                            Baca selengkapnya →
-                        </a>
-
-                    </article>
-
-
-                    <article class="info-card">
-
-                        <div class="info-top">
-
-                            <span class="info-category health">
-                                HEALTH
-                            </span>
-
-                            <span class="info-date">
-                                2026
-                            </span>
-
+                        <div>
+                            <span>SAFETY</span>
+                            <h3>Gunakan APD</h3>
+                            <p>
+                                Pastikan selalu menggunakan APD
+                                sesuai dengan pekerjaan.
+                            </p>
                         </div>
 
-                        <div class="info-icon health-info-icon">
+                    </div>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M12 20C12 20 5 16 5 10C5 7 7 5 10 5C11.2 5 12 5.7 12 7C12 5.7 12.8 5 14 5C17 5 19 7 19 10C19 16 12 20 12 20Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
 
-                                <path
-                                    d="M9 11H11V9H13V11H15V13H13V15H11V13H9V11Z"
-                                    fill="currentColor"
-                                />
+                    <div class="info-card">
+
+                        <div class="info-icon blue-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 21C16.4 21 20 17.4 20 13C20 8.6 16.4 5 12 5C7.6 5 4 8.6 4 13C4 17.4 7.6 21 12 21Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"/>
+
+                                <path d="M8 3H16"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
+
+                                <path d="M12 9V13L15 15"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
                             </svg>
-
                         </div>
 
-                        <h3>
-                            Menjaga kesehatan selama
-                            bekerja
-                        </h3>
-
-                        <p>
-                            Kesehatan pekerja merupakan bagian penting
-                            dari produktivitas dan keselamatan.
-                        </p>
-
-                        <a href="dokumen/index.html">
-                            Baca selengkapnya →
-                        </a>
-
-                    </article>
-
-
-                    <article class="info-card">
-
-                        <div class="info-top">
-
-                            <span class="info-category environment">
-                                ENVIRONMENT
-                            </span>
-
-                            <span class="info-date">
-                                2026
-                            </span>
-
+                        <div>
+                            <span>HEALTH</span>
+                            <h3>Jaga Kesehatan</h3>
+                            <p>
+                                Jaga kondisi tubuh dan tetap
+                                bekerja dalam kondisi fit.
+                            </p>
                         </div>
 
-                        <div class="info-icon environment-info-icon">
+                    </div>
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M12 20C12 20 5 16.5 5 11C5 7 8 4 12 4C16 4 19 7 19 11C19 16.5 12 20 12 20Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
 
-                                <path
-                                    d="M12 20V9"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                    <div class="info-card">
 
-                                <path
-                                    d="M12 13C9.5 13 8 11.8 7 10"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                        <div class="info-icon green-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 21C17 18.5 20 14.8 20 10.5C20 7 17.3 4 14 4C12.9 4 11.9 4.4 11 5.1C10.1 4.4 9.1 4 8 4C4.7 4 2 7 2 10.5C2 14.8 5 18.5 12 21Z"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linejoin="round"/>
 
-                                <path
-                                    d="M12 11C14.5 11 16 9.8 17 8"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                />
+                                <path d="M12 5V16"
+                                      stroke="currentColor"
+                                      stroke-width="2"/>
+
+                                <path d="M8 10C9.5 10 11 10.7 12 12"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"/>
                             </svg>
-
                         </div>
 
-                        <h3>
-                            Peduli lingkungan di
-                            area kerja
-                        </h3>
+                        <div>
+                            <span>ENVIRONMENT</span>
+                            <h3>Peduli Lingkungan</h3>
+                            <p>
+                                Kurangi limbah dan jaga lingkungan
+                                kerja tetap bersih.
+                            </p>
+                        </div>
 
-                        <p>
-                            Bersama menjaga lingkungan melalui pengelolaan
-                            limbah dan penggunaan sumber daya yang bijak.
-                        </p>
-
-                        <a href="dokumen/index.html">
-                            Baca selengkapnya →
-                        </a>
-
-                    </article>
+                    </div>
 
                 </div>
 
@@ -946,66 +581,31 @@
         </section>
 
 
-        <!-- =========================================
+        <!-- =========================
              EMERGENCY
-        ========================================== -->
+        ========================== -->
         <section class="emergency-section">
 
             <div class="container">
 
                 <div class="emergency-card">
 
+                    <div class="emergency-icon">
+                        !
+                    </div>
+
                     <div class="emergency-content">
-
-                        <div class="emergency-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M12 3V13"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                />
-
-                                <circle
-                                    cx="12"
-                                    cy="17"
-                                    r="1"
-                                    fill="currentColor"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <div>
-
-                            <span class="emergency-label">
-                                EMERGENCY CONTACT
-                            </span>
-
-                            <h2>
-                                Dalam keadaan darurat,
-                                segera hubungi tim terkait.
-                            </h2>
-
-                        </div>
-
+                        <span>HSE EMERGENCY</span>
+                        <strong>EXT. 118</strong>
+                        <p>
+                            Segera hubungi HSE apabila terjadi
+                            kondisi darurat.
+                        </p>
                     </div>
 
-                    <div class="emergency-number">
-
-                        <span>
-                            HSE Emergency
-                        </span>
-
-                        <strong>
-                            EXT. 118
-                        </strong>
-
-                    </div>
+                    <a href="kontak/index.html" class="emergency-button">
+                        KONTAK HSE →
+                    </a>
 
                 </div>
 
@@ -1016,61 +616,72 @@
     </main>
 
 
-    <!-- =========================================
+    <!-- =========================
          FOOTER
-    ========================================== -->
-    <footer class="footer">
+    ========================== -->
+    <footer class="main-footer">
 
-        <div class="container footer-main">
+        <div class="container">
 
-            <div class="footer-brand">
+            <div class="footer-grid">
 
-                <div class="footer-logo">
-                    HSE
+                <div class="footer-brand">
+
+                    <div class="footer-logo">
+                        HSE
+                    </div>
+
+                    <div>
+                        <strong>HSE Department</strong>
+                        <span>PT Unggul Ejawantah Industri</span>
+                    </div>
+
                 </div>
 
-                <div>
-                    <strong>
-                        HSE DEPARTMENT
-                    </strong>
 
-                    <span>
-                        PT Unggul Ejawantah Industri
-                    </span>
+                <div class="footer-links">
+
+                    <a href="tentang-hse/index.html">
+                        Tentang HSE
+                    </a>
+
+                    <a href="laporan/index.html">
+                        Laporan
+                    </a>
+
+                    <a href="inspeksi/index.html">
+                        Inspeksi
+                    </a>
+
+                    <a href="dokumen/index.html">
+                        Dokumen
+                    </a>
+
+                    <a href="gallery/index.html">
+                        Gallery
+                    </a>
+
+                    <a href="kontak/index.html">
+                        Kontak
+                    </a>
+
                 </div>
 
             </div>
 
 
-            <div class="footer-links">
+            <div class="footer-bottom">
 
-                <a href="tentang-hse/index.html">
-                    Tentang HSE
-                </a>
+                <p>
+                    © <span id="currentYear">2026</span>
+                    Department HSE. All Rights Reserved.
+                </p>
 
-                <a href="dokumen/index.html">
-                    Dokumen
-                </a>
-
-                <a href="kontak/index.html">
-                    Kontak
-                </a>
+                <span>
+                    Health • Safety • Environment
+                </span>
 
             </div>
-
-        </div>
-
-
-        <div class="container footer-bottom">
-
-            <p>
-                © <span id="currentYear">2026</span>
-                Department HSE. All Rights Reserved.
-            </p>
-
-            <p>
-                Health • Safety • Environment
-            </p>
 
         </div>
 
