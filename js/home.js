@@ -1,9 +1,8 @@
-```javascript
 document.addEventListener("DOMContentLoaded", function () {
 
-    // =========================
-    // NAVIGATION ACTIVE
-    // =========================
+    /* =========================================
+       NAVIGATION
+    ========================================= */
 
     const navLinks = document.querySelectorAll(".nav a");
 
@@ -16,58 +15,98 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             this.classList.add("active");
+
         });
 
     });
 
 
-    // =========================
-    // SUMMARY NUMBER ANIMATION
-    // =========================
+    /* =========================================
+       SUMMARY NUMBER ANIMATION
+    ========================================= */
 
-    const numbers = document.querySelectorAll(".summary-card strong");
+    const numbers = document.querySelectorAll(
+        ".summary-info strong"
+    );
+
 
     numbers.forEach(function (number) {
 
-        const targetText = number.textContent.trim();
-
-        // Ambil angka saja
         const target = parseInt(
-            targetText.replace(/,/g, ""),
+            number.getAttribute("data-value"),
             10
         );
 
-        // Jika bukan angka, abaikan
+
         if (isNaN(target)) {
             return;
         }
 
-        let current = 0;
+
+        let start = 0;
 
         const duration = 1000;
+
         const startTime = performance.now();
 
-        function animate(time) {
+
+        function animate(currentTime) {
 
             const progress = Math.min(
-                (time - startTime) / duration,
+                (currentTime - startTime) / duration,
                 1
             );
 
-            current = Math.floor(target * progress);
 
-            number.textContent = current.toLocaleString("en-US");
+            start = Math.floor(
+                target * progress
+            );
+
+
+            number.textContent =
+                start.toLocaleString("en-US");
+
 
             if (progress < 1) {
+
                 requestAnimationFrame(animate);
+
             } else {
-                number.textContent = target.toLocaleString("en-US");
+
+                number.textContent =
+                    target.toLocaleString("en-US");
+
             }
+
         }
+
 
         requestAnimationFrame(animate);
 
     });
 
+
+    /* =========================================
+       ACTIVITY IMAGE FALLBACK
+    ========================================= */
+
+    const images = document.querySelectorAll(
+        ".activity-card img"
+    );
+
+
+    images.forEach(function (image) {
+
+        image.addEventListener("error", function () {
+
+            this.style.display = "none";
+
+            this.parentElement.classList.add(
+                "no-image"
+            );
+
+        });
+
+    });
+
 });
-```
