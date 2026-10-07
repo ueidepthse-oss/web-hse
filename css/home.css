@@ -37,7 +37,8 @@
 
     --border: #dce5e3;
 
-    --container: 1180px;
+    /* HANYA DIUBAH: 1180px → 1140px */
+    --container: 1140px;
 }
 
 
