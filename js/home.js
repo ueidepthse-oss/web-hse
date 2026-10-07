@@ -1,14 +1,12 @@
-```javascript
-/* =========================================================
-   HSE HOME
-   PT UNGGUL EJAWANTAH INDUSTRI
-========================================================= */
+/* =========================================
+   HSE HOME PAGE JAVASCRIPT
+========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
     /* =========================================
        MOBILE MENU
-    ========================================== */
+    ========================================= */
 
     const menuToggle = document.getElementById("menuToggle");
     const navMenu = document.getElementById("navMenu");
@@ -16,23 +14,36 @@ document.addEventListener("DOMContentLoaded", function () {
     if (menuToggle && navMenu) {
 
         menuToggle.addEventListener("click", function () {
-
-            navMenu.classList.toggle("show");
-
+            navMenu.classList.toggle("open");
         });
 
 
-        /* Close menu after clicking navigation */
+        /* Close menu after clicking a link */
 
-        const navLinks = navMenu.querySelectorAll(".nav-link");
+        const navLinks = navMenu.querySelectorAll("a");
 
         navLinks.forEach(function (link) {
 
             link.addEventListener("click", function () {
-
-                navMenu.classList.remove("show");
-
+                navMenu.classList.remove("open");
             });
+
+        });
+
+
+        /* Close menu when clicking outside */
+
+        document.addEventListener("click", function (event) {
+
+            const clickedInsideMenu =
+                navMenu.contains(event.target);
+
+            const clickedToggle =
+                menuToggle.contains(event.target);
+
+            if (!clickedInsideMenu && !clickedToggle) {
+                navMenu.classList.remove("open");
+            }
 
         });
 
@@ -40,85 +51,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================
-       CLOSE MENU WHEN CLICKING OUTSIDE
-    ========================================== */
+       CURRENT YEAR
+    ========================================= */
 
-    document.addEventListener("click", function (event) {
+    const currentYear =
+        document.getElementById("currentYear");
 
-        if (!menuToggle || !navMenu) {
-            return;
-        }
-
-        const clickedInsideMenu =
-            navMenu.contains(event.target);
-
-        const clickedToggle =
-            menuToggle.contains(event.target);
-
-        if (!clickedInsideMenu && !clickedToggle) {
-
-            navMenu.classList.remove("show");
-
-        }
-
-    });
+    if (currentYear) {
+        currentYear.textContent =
+            new Date().getFullYear();
+    }
 
 
     /* =========================================
        SIMPLE SCROLL ANIMATION
-    ========================================== */
+    ========================================= */
 
-    const animatedElements = document.querySelectorAll(
-        ".stat-card, .program-card, .news-card, .about-content, .about-visual"
-    );
-
-    const observerOptions = {
-        threshold: 0.12
-    };
+    const animatedElements =
+        document.querySelectorAll(
+            ".today-card, .info-card, .hero-card, .emergency-card"
+        );
 
 
-    const observer = new IntersectionObserver(
-        function (entries) {
+    if ("IntersectionObserver" in window) {
 
-            entries.forEach(function (entry) {
+        const observer =
+            new IntersectionObserver(
+                function (entries) {
 
-                if (entry.isIntersecting) {
+                    entries.forEach(function (entry) {
 
-                    entry.target.classList.add("visible");
+                        if (entry.isIntersecting) {
 
-                    observer.unobserve(entry.target);
+                            entry.target.classList.add("show");
 
+                            observer.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
                 }
-
-            });
-
-        },
-        observerOptions
-    );
+            );
 
 
-    animatedElements.forEach(function (element) {
-
-        observer.observe(element);
-
-    });
-
-
-    /* =========================================
-       UPDATE YEAR
-    ========================================== */
-
-    const currentYear = new Date().getFullYear();
-
-    const footerText =
-        document.querySelector(".footer-bottom-inner span");
-
-    if (footerText) {
-
-        footerText.innerHTML =
-            "© " +
-            currentYear +
-            " PT Unggul Ejawantah Industri. All Rights Reserved.";
+        animatedElements.forEach(function (element) {
+            observer.observe(element);
+        });
 
     }
 
